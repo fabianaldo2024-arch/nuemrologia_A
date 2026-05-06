@@ -5,6 +5,7 @@ from tkinter import messagebox, ttk
 from datetime import datetime
 import struct
 import array
+from mision_numerologica import reducir_a_digito, calcular_numero_mision, SIGNIFICADOS
 
 # --------------------------------------------------
 # Inicializar pygame (sonido) una sola vez
@@ -86,7 +87,7 @@ class AppNumerologia:
         # Estilos
         style = ttk.Style()
         style.theme_use("clam")
-        style.configure("Pastel.TLabel", background="#f2efe9", foreground="#5a4d3e", font=("Segoe UI", 10))
+        style.configure("Pastel.TLabel", background="#f2efe9", foreground="#5a4d3e", font=("Segoe UI", "Arial", "Liberation Sans", "TkDefaultFont", 12))
         style.configure("Title.TLabel", font=("Segoe UI", 14, "bold"), background="#f2efe9", foreground="#7b6b5a")
         style.configure("Logo.TLabel", font=("Georgia", 12, "italic"), background="#f2efe9", foreground="#9b8a75")
 

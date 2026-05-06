@@ -1,15 +1,13 @@
-# Entorno virtual
+cat > .gitignore << 'EOF'
 venv/
-
-# Archivos compilados de Python
 __pycache__/
 *.py[cod]
 *.pyo
-
-# Archivos de sistema
 .DS_Store
 Thumbs.db
-
-# Archivos de proyecto de IDE (si usás VS Code, PyCharm, etc.)
 .vscode/
 .idea/
+dist/
+build/
+*.spec
+EOF

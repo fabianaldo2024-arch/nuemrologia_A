@@ -49,36 +49,19 @@ Ya tenés buena base. Solo necesitás unos retoques y buenas prácticas:
 
     Revisar que no queden archivos basura (los .pyc, __pycache__, etc.).
 
-🛠️ Preparación final antes de los comandos
-1. .gitignore profesional
-
-Creá (o reemplazá) este archivo en la raíz (/home/perezman/NUMEROLOGIA/.gitignore):
-gitignore
-
-# Entorno virtual
-venv/
-
-# Archivos compilados de Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Archivos de sistema
-.DS_Store
-Thumbs.db
-
-# Archivos de proyecto de IDE (si usás VS Code, PyCharm, etc.)
-.vscode/
-.idea/
-
-2. README.md
-
-Aquí un modelo completo para que copies, pegues y adaptes:
-markdown
-
+cat > README.md << 'EOF'
 # 🔢 Numerología Pitagórica - Número de Misión
 
-Aplicación de escritorio para calcular tu **Número de Misión** según la numerología pitagórica, con una interfaz gráfica moderna (Tkinter) y sonido integrado.
+Aplicación de escritorio para calcular tu **Número de Misión** según la numerología pitagórica, con interfaz gráfica y sonido integrado.
+
+## 📥 Descarga directa (ejecutables)
+
+Si no querés instalar Python, descargá el archivo correspondiente desde la [página de Releases](https://github.com/TU_USUARIO/numerologia/releases):
+
+- **Windows**: `mision_numerologica_gui.exe`
+- **Linux**: `mision_numerologica_gui` (dar permisos con `chmod +x`)
+
+Simplemente hacé doble clic y listo.
 
 ## ✨ Características
 
@@ -94,9 +77,10 @@ Aplicación de escritorio para calcular tu **Número de Misión** según la nume
 - **En Linux:** instalar Tkinter con `sudo apt update && sudo apt install python3-tk`.
 - **En Windows / macOS:** Tkinter suele venir incluido con la instalación oficial de Python.
 
-## 🚀 Instalación y ejecución
+## 🚀 Instalación y ejecución (desde código fuente)
 
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/TU_USUARIO/numerologia.git
    cd numerologia
+   
