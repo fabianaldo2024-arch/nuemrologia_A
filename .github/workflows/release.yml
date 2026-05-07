@@ -28,14 +28,24 @@ jobs:
       shell: bash
     - name: Build with PyInstaller
       run: |
+<<<<<<< HEAD
         pyinstaller --onefile --windowed --add-data "click.wav:." mision_numerologica_gui.py
+=======
+        pyinstaller --onefile --windowed --add-data "click.wav:." mission_numerologica_gui.py
+>>>>>>> refs/remotes/origin/main
       shell: bash
     - name: Rename executable
       run: |
         if [ "$RUNNER_OS" = "Windows" ]; then
+<<<<<<< HEAD
           mv dist/mision_numerologica_gui.exe dist/NumerologiaGUI-windows.exe
         else
           mv dist/mision_numerologica_gui dist/NumerologiaGUI-linux
+=======
+          mv dist/mission_numerologica_gui.exe dist/NumerologiaGUI-windows.exe
+        else
+          mv dist/mission_numerologica_gui dist/NumerologiaGUI-linux
+>>>>>>> refs/remotes/origin/main
         fi
       shell: bash
     - name: Upload artifact
