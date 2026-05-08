@@ -28,7 +28,7 @@ jobs:
         pyinstaller --noconfirm --onefile --windowed --add-data "click.wav;." mision_numerologica_gui.py
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Mision-Numerologica-Windows
         path: dist/mision_numerologica_gui.exe
